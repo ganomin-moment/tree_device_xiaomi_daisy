@@ -49,3 +49,7 @@ allow untrusted_app vendor_file:file { getattr };
 allow untrusted_app adsprpcd_file:dir { getattr };
 allow untrusted_app keylayout_file:dir { getattr };
 allow untrusted_app sysfs_net:dir { read };
+allow untrusted_app rootfs:file { getattr };
+allow untrusted_app mnt_vendor_file:dir { search };
+allow untrusted_app firmware_file:filesystem { getattr };
+allow untrusted_app selinuxfs:file { read };
