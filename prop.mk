@@ -289,3 +289,7 @@ persist.vendor.audio.speaker.prot.enable=false \
 persist.vendor.data.profile_update=true \
 persist.vendor.radio.prefer_spn=1 \
 vendor.audio.offload.passthrough=false
+
+#Dolby Plus
+PRODUCT_PROPERTY_OVERRIDES += \
+sys.keep_app_1=com.dolby.ds1appUI
