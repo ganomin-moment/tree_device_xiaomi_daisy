@@ -342,11 +342,6 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
-# Perf
-PRODUCT_BOOT_JARS += \
-    QPerformance \
-    UxPerformance
-
 # Pre-opt SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
