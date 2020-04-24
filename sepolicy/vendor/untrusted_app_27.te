@@ -61,3 +61,5 @@ allow untrusted_app_27 vendor_firmware_file:dir { getattr };
 allow untrusted_app_27 rootfs:dir { search open read };
 allow untrusted_app_27 proc_tty_drivers:file { read };
 allow untrusted_app_27 serialno_prop:file { getattr };
+allow untrusted_app_27 proc:file { read };
+allow untrusted_app_27 proc_zoneinfo:file { read };
