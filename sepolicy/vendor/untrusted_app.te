@@ -53,3 +53,4 @@ allow untrusted_app rootfs:file { getattr };
 allow untrusted_app mnt_vendor_file:dir { search };
 allow untrusted_app firmware_file:filesystem { getattr };
 allow untrusted_app selinuxfs:file { read };
+allow untrusted_app proc_asound:dir { search };
