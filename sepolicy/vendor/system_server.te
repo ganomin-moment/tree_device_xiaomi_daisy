@@ -34,3 +34,4 @@ allow system_server persist_camera_prop:file { read };
 allow system_server persist_camera_prop:file { open };
 allow system_server zygote:process { getpgid };
 allow system_server vfat:dir { read open };
+allow system_server shell_prop:property_service { set };
