@@ -221,13 +221,15 @@ PRODUCT_PACKAGES += \
     ethertypes \
     libebtc
 
-# FM
+# FM 
 PRODUCT_PACKAGES += \
     FM2 \
-    libqcomfm_jni
+    libqcomfm_jni \
+    qcom.fmradio \
+    qcom.fmradio.xml
 
 PRODUCT_BOOT_JARS += \
-    qcom.fmradio
+    qcom.fmradio 
 
 # GPS
 PRODUCT_COPY_FILES += \
