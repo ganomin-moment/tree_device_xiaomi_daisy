@@ -21,3 +21,5 @@ allow platform_app time_daemon:file { read };
 allow platform_app system_file:file { read };
 allow platform_app system_file:file { getattr };
 allow platform_app vendor_display_prop:file { read };
+allow platform_app vendor_default_prop:file { read open getattr map };
+allow platform_app radio_data_file:dir { getattr };
