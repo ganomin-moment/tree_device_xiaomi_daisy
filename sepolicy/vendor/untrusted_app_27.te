@@ -107,3 +107,6 @@ allow untrusted_app_27 sysfs_net:dir { search };
 allow untrusted_app_27 ctl_console_prop:file { open };
 allow untrusted_app_27 ctl_default_prop:file { open };
 allow untrusted_app_27 proc_net_tcp_udp:file { open };
+allow untrusted_app_27 sepolicy_file:file { getattr };
+allow untrusted_app_27 mac_perms_file:file { getattr };
+allow untrusted_app_27 seapp_contexts_file:file { getattr };
