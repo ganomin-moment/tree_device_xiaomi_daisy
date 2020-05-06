@@ -89,7 +89,7 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.huaq
 # Cne/Dpm
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.cne.feature=1 \
-persist.dpm.feature=0
+persist.vendor.dpm.feature=0
 
 # Coresight
 persist.debug.coresight.config=stm-events \
