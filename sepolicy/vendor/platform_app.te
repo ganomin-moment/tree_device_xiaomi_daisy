@@ -23,3 +23,6 @@ allow platform_app system_file:file { getattr };
 allow platform_app vendor_display_prop:file { read };
 allow platform_app vendor_default_prop:file { read open getattr map };
 allow platform_app radio_data_file:dir { getattr };
+allow platform_app app_data_file:file execute;
+allow platform_app sysfs:dir read;
+allow platform_app sysfs_switch:dir search;
