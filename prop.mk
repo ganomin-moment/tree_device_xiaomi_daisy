@@ -214,7 +214,7 @@ persist.vendor.radio.apm_sim_not_pwdn=1 \
 persist.radio.multisim.config=dsds \
 persist.radio.VT_ENABLE=1 \
 persist.radio.volte.dan_support=true \
-persist.sys.cust.lte_config=true z \
+persist.sys.cust.lte_config=true \
 persist.vendor.radio.custom_ecc=1 \
 persist.vendor.radio.jbims=1 \
 persist.vendor.radio.rat_on=combine \
@@ -250,6 +250,7 @@ debug.sf.early_gl_app_phase_offset_ns=15000000
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.timed.enable=true \
+persist.vendor.delta_time.enable=true \
 persist.delta_time.enable=true
 
 # Tcp
