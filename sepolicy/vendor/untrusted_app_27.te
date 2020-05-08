@@ -115,3 +115,7 @@ allow untrusted_app_27 proc_interrupts:file { open };
 allow untrusted_app_27 bootloader_boot_reason_prop:file { getattr };
 allow untrusted_app_27 boottime_prop:file { getattr };
 allow untrusted_app_27 cnd_vendor_prop:file { getattr };
+allow untrusted_app_27 proc_interrupts:file { getattr };
+allow untrusted_app_27 sysfs_graphics:file { getattr };
+allow untrusted_app_27 debugfs:dir { open };
+allow untrusted_app_27 proc_asound:file { read };

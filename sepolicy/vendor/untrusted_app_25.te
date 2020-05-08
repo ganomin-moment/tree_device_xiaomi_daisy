@@ -15,3 +15,4 @@ allow untrusted_app_25 persist_camera_prop:file { open read };
 allow untrusted_app_25 proc_qtaguid_stat:file { read };
 allow untrusted_app_25 proc_vmstat:file { getattr };
 allow untrusted_app_25 radio_data_file:dir { getattr };
+allow untrusted_app_25 persist_camera_prop:file { getattr };
