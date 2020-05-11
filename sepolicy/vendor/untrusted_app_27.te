@@ -125,3 +125,4 @@ allow untrusted_app_27 proc_net_tcp_udp:file { getattr };
 allow untrusted_app_27 hal_memtrack_hwservice:hwservice_manager { find };
 allow untrusted_app_27 proc_net:file { open };
 allow untrusted_app_27 proc_net:file { getattr };
+allow untrusted_app_27 anr_data_file:dir { getattr };
