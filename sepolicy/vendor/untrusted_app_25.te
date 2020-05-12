@@ -17,3 +17,4 @@ allow untrusted_app_25 proc_vmstat:file { getattr };
 allow untrusted_app_25 radio_data_file:dir { getattr };
 allow untrusted_app_25 persist_camera_prop:file { getattr };
 allow untrusted_app_25 serialno_prop:file { read };
+allow untrusted_app_25 rootfs:dir { read };
