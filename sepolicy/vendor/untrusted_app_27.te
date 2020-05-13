@@ -132,6 +132,3 @@ allow untrusted_app_27 bpf_progs_loaded_prop:file { open };
 allow untrusted_app_27 bpf_progs_loaded_prop:file { getattr };
 allow untrusted_app_27 ctl_LKCore_prop:file { open };
 allow untrusted_app_27 sysfs_kgsl:file { getattr };
-allow untrusted_app_27 sysfs_io_sched_tuneable:file { read };
-allow untrusted_app_27 sysfs_io_sched_tuneable:file { open };
-allow untrusted_app_27 sysfs_io_sched_tuneable:file { getattr };
