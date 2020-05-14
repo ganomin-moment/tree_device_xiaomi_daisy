@@ -22,12 +22,28 @@ $(call inherit-product-if-exists, vendor/xiaomi/ExclusivePack/config.mk)
 # Inherit from daisy device
 $(call inherit-product, device/xiaomi/daisy/device.mk)
 
-# Inherit some common Xtended stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+# Inherit some common EvolutionX stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+# Other EvolutionX releated stuff
+CUSTOM_BUILD_TYPE := UNOFFICIAL
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_WIFI_EXT := true
+
+# GApps stuff
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
+# Maintainer stuff
+EVO_DONATE_URL := https://paypal.me/ganomin
+EVO_MAINTAINER := ganomin🇵🇱
+EVO_SUPPORT_URL := https://t.me/EvolutionXDaisy
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := daisy
-PRODUCT_NAME := xtended_daisy
+PRODUCT_NAME := aosp_daisy
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A2 Lite
@@ -47,9 +63,3 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="daisy_sprout"
-
-# Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.xtended.maintainer=🔥TogoFire🔥    
-
-TARGET_BOOT_ANIMATION_RES := 1080
